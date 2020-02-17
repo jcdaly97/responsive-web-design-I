@@ -15,7 +15,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 1px solid red;
+	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -100,6 +100,7 @@ nav{
     max-width: 45%;
 }
 .bttm{
+    margin: 2% 0;
 max-width: 30%;
 }
 #topThird{
@@ -138,7 +139,7 @@ footer{
 	margin-top: 4%;
 }
 
-/*media quearies*/
+/*media queries*/
 @media(max-width:1080px){
     header{
         flex-direction: column-reverse;
@@ -153,11 +154,41 @@ footer{
     }
 }
 @media(max-width:700px){
+    body{
+        margin:0;
+    }
+    header{
+        max-width: 100%;
+    }
     .links{
         text-align: center;
+        padding: 5%;
+        border-top: 1px solid black;
+        
+    }
+    #lastLink{
+        border-bottom: 1px solid black;
     }
     nav{
         flex-direction: column;
+        width: 100%;
+    }
+    #lowerHalf{
+        height: auto;
+    }
+    #topThird{
+        height: auto;
+        flex-direction: column;
+    }
+    #bottomThird{
+        height: auto;
+        flex-direction: column;
+    }
+    .top{
+        max-width: 100%;
+    }
+    .bttm{
+        max-width: 100%;
     }
 }
 
