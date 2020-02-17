@@ -1,3 +1,223 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 1px solid red;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style-type: square;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0 2%;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+header{
+	margin-top: 1%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+#upperHalf{
+	display: flex;
+	align-items: center;
+    justify-content: space-evenly;
+    height: 70vh;
+}
+#leftSide{
+    width: 30%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#tagline{
+	font-size: 90px;
+	text-align: center;
+}
+#start{
+    text-align: center; 
+    padding: 4%;
+    width: 20vh;
+    border: 1px solid black;
+}
+.top{
+    margin: 2% 0;
+    max-width: 45%;
+}
+.bttm{
+max-width: 30%;
+}
+#topThird{
+    display: flex;
+    justify-content: space-between;
+    height:33%;
+    align-items: center;
+}
+.middle-img{
+    height:auto;
+    width:100%
+}
+#bottomThird{
+    height: 33%;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#lowerHalf{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+	margin: 2% 0;
+	border-top: 1px solid gray;
+    border-bottom: 1px solid grey;
+    height: 70vh;
+}
+#contact{
+	margin: 2% 0;
+}
+
+footer{
+	text-align: center;
+	margin-top: 4%;
+}
+
+/*media quearies*/
+@media(max-width:1080px){
+    header{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav{
+        margin-top: 2%;
+    }
+    #codeCircle{
+        display: none;
+    }
+}
+@media(max-width:700px){
+    .links{
+        text-align: center;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+/*Services CSS----------------------------------------------------
+
+#serviceTop{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin:2% 0;
+}
+#topP{
+	margin: 5% 0;
+}
+#title{
+	font-size: 30px;
+}
+#serviceMiddle{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	border-top: 1px solid black;
+	border-bottom: 2px solid black;
+	padding: 4% 0;
+}
+.box{
+width:48%;
+margin:2% 0;
+padding: 5%;
+background-color: rgb(233, 233, 233);
+border:2px solid black;
+display: flex;	
+flex-direction: column;
+justify-content: space-between;
+}
+button{
+	background-color: white;
+	width: 50%;
+	padding: 4%;
+	border: 1px solid black; 
+	border-radius: 4px;
+	margin-top: 5%;
+	text-align: center;
+}
+#serviceBottom{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 5% 0;
+}
+#bottomLeft{
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+#serviceBottom #bottomLeft .bottomList{
+	list-style-type: square; 
+	padding-left: 150px;
+
+}
+*/
